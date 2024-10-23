@@ -1,7 +1,6 @@
-// Importar o módulo Express
+
 const express = require('express');
 
-// Criar uma instância do aplicativo Express
 const app = express();
 
 const port = 3000;
@@ -11,9 +10,9 @@ app.get('/', (req, res) => {
 });
 
 app.get('/sobre', (req, res) => {
-    res.send('Oi, me chamo Beatriz e essa rota é sobre mim!');
+    res.send('Hi, my name is Beatriz, this route is about me!');
 });
 
 app.listen(port, () => {
-    console.log(`Servidor rodando em http://localhost:${port}`);
+    console.log(`Server running in http://localhost:${port}`);
 });
